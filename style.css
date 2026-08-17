@@ -562,7 +562,7 @@ section {
     text-decoration: none;
 }
 
-/* Responsive */
+/* Responsive Styles */
 
 @media (max-width: 1040px) {
     header {
@@ -580,10 +580,10 @@ section {
     .navigation.active {
         z-index: 889;
         position: fixed;
-        background-color: white;
+        background-color: #ffffff;
         top: 0;
         right: 0;
-        width: 380px;
+        width: 300px;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -594,40 +594,36 @@ section {
     }
 
     header .navigation a {
-        color: black;
-        font-size: 1.2em;
+        color: #111;
+        font-size: 1.1em;
         margin: 10px;
-        padding: 10px 40px;
+        padding: 10px 30px;
         border-radius: 5px;
     }
 
     header .navigation a:hover {
         background-color: #3a6cf4;
         color: white;
-        transition: 0.3s ease;
     }
 
     .menu-btn {
         position: absolute;
         background-image: url(menu.png);
         background-position: center;
-        background-size: 30px;
+        background-size: 28px;
         background-repeat: no-repeat;
         width: 40px;
         height: 40px;
-        right: 0;
-        margin: 0 20px;
+        right: 20px;
         cursor: pointer;
-        transition: 0.3s ease;
+        filter: invert(1);
     }
 
     .menu-btn.active {
         z-index: 999;
         background-image: url(close.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 25px;
-        transition: 0.3s ease;
+        background-size: 22px;
+        filter: none;
     }
 
     section {
@@ -635,15 +631,27 @@ section {
     }
 
     .main {
+        background-position: right 25% center;
         background-attachment: scroll;
+        height: 100vh;
+        padding: 0 20px;
     }
 
     .main .content h2 {
-        font-size: 1em;
+        font-size: 1.4em;
+    }
+
+    .main .content h2 span {
+        font-size: 2em;
+    }
+
+    .animated-text {
+        height: 50px;
     }
 
     .animated-text h3 {
-        font-size: 2.2em;
+        font-size: 1.8em;
+        line-height: 50px;
     }
 
     .section-title {
@@ -654,21 +662,31 @@ section {
         flex-direction: column;
     }
 
-    .about .content .column {
+    .about .content .col-left,
+    .about .content .col-right {
         width: 100%;
-        position: relative;
     }
 
-    .about .content .col-right {
-        margin-top: 40px;
+    .about .content .col-left .img-card {
+        min-height: auto;
+        height: 380px;
+        margin-bottom: 25px;
+    }
+
+    .about .content .col-left .img-card img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
     }
 
     .skills .content {
         flex-direction: column;
     }
 
-    .skills .content .column {
-        position: relative;
+    .skills .content .col-left,
+    .skills .content .col-right {
         width: 100%;
     }
 
@@ -676,8 +694,13 @@ section {
         margin-top: 40px;
     }
 
+    .work .content .card {
+        width: 100%;
+        max-width: 360px;
+    }
+
     .contact-form {
-        padding: 35px 40px;
+        padding: 30px 20px;
     }
 }
 
