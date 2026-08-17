@@ -494,10 +494,12 @@ section{
     margin: 10px;
   }
   
-  .contact .content .row .card .info span{
-    color: #666;
-    font-weight: 500;
-  }
+  .contact .content .row .card .info span {
+  color: #666;
+  font-weight: 500;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
   
   .contact-form{
     background: #fff;
