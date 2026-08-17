@@ -70,7 +70,7 @@ section {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(Image/bg.jpg);
+    background-image: url(bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -609,7 +609,7 @@ section {
 
     .menu-btn {
         position: absolute;
-        background-image: url(Image/menu.png);
+        background-image: url(menu.png);
         background-position: center;
         background-size: 30px;
         background-repeat: no-repeat;
@@ -623,7 +623,7 @@ section {
 
     .menu-btn.active {
         z-index: 999;
-        background-image: url(Image/close.png);
+        background-image: url(close.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 25px;
