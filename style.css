@@ -67,14 +67,14 @@ section {
 .main {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(bg.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 15, 0.85) 40%, rgba(0, 0, 15, 0.4) 100%), url(bg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    padding: 120px 200px 60px;
 }
 
 .main .content {
@@ -631,18 +631,20 @@ section {
     }
 
     .main {
-        background-position: right 25% center;
+        background-image: linear-gradient(rgba(0, 0, 15, 0.82), rgba(0, 0, 15, 0.82)), url(bg.jpg);
+        background-position: center;
         background-attachment: scroll;
-        height: 100vh;
-        padding: 0 20px;
+        min-height: 100vh;
+        height: auto;
+        padding: 120px 20px 60px;
     }
 
     .main .content h2 {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 
     .main .content h2 span {
-        font-size: 2em;
+        font-size: 2.2rem;
     }
 
     .animated-text {
@@ -650,60 +652,15 @@ section {
     }
 
     .animated-text h3 {
-        font-size: 1.8em;
+        font-size: 2rem;
         line-height: 50px;
     }
 
-    .section-title {
-        font-size: 1.8em;
-    }
-
-    .about .content {
-        flex-direction: column;
-    }
-
-    .about .content .col-left,
-    .about .content .col-right {
-        width: 100%;
-    }
-
-    .about .content .col-left .img-card {
-        min-height: auto;
-        height: 380px;
-        margin-bottom: 25px;
-    }
-
-    .about .content .col-left .img-card img {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .skills .content {
-        flex-direction: column;
-    }
-
-    .skills .content .col-left,
-    .skills .content .col-right {
-        width: 100%;
-    }
-
-    .skills .content .col-right {
-        margin-top: 40px;
-    }
-
-    .work .content .card {
-        width: 100%;
-        max-width: 360px;
-    }
-
-    .contact-form {
-        padding: 30px 20px;
+    .skills .content .col-left .paragraph-text {
+        font-size: 0.95em;
+        line-height: 1.7;
     }
 }
-
 .scrollToTop-btn {
     z-index: 999;
     position: fixed;
