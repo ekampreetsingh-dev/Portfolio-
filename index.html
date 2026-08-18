@@ -20,7 +20,7 @@
             <a href="#skills" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Skills</a>
             <a href="#services" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Services</a>
             <a href="#work" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Work</a>
-            <a href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Contact</a>
+            <a href="#contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Contact</a>
         </div>
     </header>
 
@@ -195,11 +195,19 @@ Continuous Growth: Evolving from a beginner coder into a full frontend creator, 
         </div>
         <div class="content">
             <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <div class="card-img">
-                    <img src="work1.jpg" alt="">
+                <div class="card">
+    <div class="card-img">
+        <img src="work1.jpg" alt="TaskSphere Productivity Workspace">
+    </div>
+
+    <div class="project-info">
+        <h3>TaskSphere</h3>
+        <p>Gamified productivity workspace with tasks, focus timer, XP, streaks and analytics.</p>
+        <a href="https://tasksphere-workspace.vercel.app/" target="_blank">
+            View Project
+        </a>
+    </div>
                 </div>
-            </div>
-            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <div class="card-img">
                     <img src="work2.jpg" alt="">
                 </div>
@@ -328,7 +336,8 @@ Continuous Growth: Evolving from a beginner coder into a full frontend creator, 
         });
 
         // Contact Form Function (WhatsApp / Email)
-        function sendMessage(method) {
+/** @param {'whatsapp'|'email'} method */
+function sendMessage(method) {
             const name = document.getElementById('senderName').value.trim();
             const email = document.getElementById('senderEmail').value.trim();
             const message = document.getElementById('senderMessage').value.trim();
