@@ -671,3 +671,21 @@ section {
         max-width: 100%;
     }
 }
+.contact-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.contact-card-link .card {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-card-link .card:hover {
+    transform: translateY(-8px);
+}
+
+.contact-card-link .card:active {
+    transform: scale(0.97);
+}
