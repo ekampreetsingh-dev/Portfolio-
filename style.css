@@ -312,7 +312,7 @@ section {
 .skills .content .col-right .bar .css::before { width: 60%; background-color: #0c73b8; }
 .skills .content .col-right .bar .javascript::before { width: 50%; background-color: #e3a324; }
 .skills .content .col-right .bar .python::before { width: 80%; background-color: blue; }
-.skills .content .col-right .bar .php::before { width: 40%; background-color: #6d7eb8; }
+.skills .content .col-right .bar .writing::before { width: 40%; background-color: #6d7eb8; }
 
 /* Services */
 .services .content {
